@@ -1,0 +1,32 @@
+/*******************************/
+/* HEADER */
+/*******************************/
+.main-header {
+  border-bottom: 1px solid #e4e4e4;
+
+  margin-bottom: 3.2rem;
+}
+
+.header-navigation {
+  height: 7.2rem;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo:link,
+.header-logo:visited {
+  font-size: 2.4rem;
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+/*******************************/
+/* HERO */
+/*******************************/
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
