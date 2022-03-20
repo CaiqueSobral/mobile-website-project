@@ -1,0 +1,60 @@
+/*************************************/
+/* VARIABLES */
+:root {
+  font-size: 62.5%;
+
+  --hue: 159;
+
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+}
+/*************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem "DM Sans", sans-serif;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialised;
+
+  background-color: var(--body-color);
+}
+
+h1 {
+  font: 700 3rem "Poppins", sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+}
