@@ -10,34 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="../scripts/main.js"></script>
 
     <title>OriginSix</title>
-    <script defer src="../scripts/main.js"></script>
   </head>
   <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="#">beauty<span>salon</span>.</a>
-        <!-- menu -->
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
-          </ul>
-        </div>
-        <!-- /menu -->
-        <div class="toggle">
-          <ion-icon class="nav-icon menu-icon" name="apps-outline"></ion-icon>
-          <ion-icon class="nav-icon close-icon" name="close-outline"></ion-icon>
-        </div>
+    <header class="header">
+      <a class="logo" href="#">CB<span>TROLL</span></a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="nav-link" href="#hero">HOME</a></li>
+          <li><a class="nav-link" href="#">1</a></li>
+          <li><a class="nav-link" href="#">2</a></li>
+          <li><a class="nav-link" href="#">3</a></li>
+          <li><a class="nav-link" href="#">4</a></li>
+        </ul>
       </nav>
+
+      <button class="btn-nav">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+      </button>
     </header>
 
     <main>
-      <section class="section" id="home">
+      <section class="section-hero" id="hero">
         <div class="container grid">
           <div class="image">
             <img
@@ -45,18 +44,20 @@
               alt="Mulher sorrindo penteando outra mulher"
             />
           </div>
-          <div class="text">
-            <h2 class="title">Saúde natural para os seus cabelos</h2>
+          <div class="hero-text">
+            <h2 class="hero-title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
             </p>
-            <a class="button" href="#">Agendar um horário</a>
+            <a class="btn" href="#">Agendar um horário</a>
           </div>
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="hero-divider"></div>
+
+      <!-- 
 
       <section class="section" id="about">
         <div class="container grid">
@@ -134,6 +135,8 @@
         </div>
       </section>
     </main>
+
+  -->
 
     <script
       type="module"
