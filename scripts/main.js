@@ -1,32 +1,35 @@
-/*  abre e fecha o menu quando clicar no icone: hamburguer e x */
-const nav = document.querySelector("#header nav");
-const toggle = document.querySelectorAll("nav .toggle");
+/*  Open and close menu */
+const btnNavEl = document.querySelector(".btn-nav");
+const headerEl = document.querySelector(".header");
 
-for (const element of toggle) {
-  element.addEventListener("click", function () {
-    nav.classList.toggle("show");
-  });
-}
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("open");
+});
 
 /* quando clicar em um item do menu, esconder o menu */
-const links = document.querySelectorAll("nav ul li a");
+const links = document.querySelectorAll("a");
 
 for (const link of links) {
   link.addEventListener("click", function () {
-    nav.classList.remove("show");
+    headerEl.classList.toggle("open");
   });
 }
 
-/* mudar o header da página quando der scroll */
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
-    header.classList.add("scroll");
-  } else {
-    // menor que a altura do header
-    header.classList.remove("scroll");
+// Fixed navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
   }
-});
+);
+observer.observe(sectionHeroEl);
