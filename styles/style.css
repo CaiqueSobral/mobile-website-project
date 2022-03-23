@@ -182,7 +182,7 @@
   background: var(--base-color);
   height: 70%;
   width: 50%;
-  top: -10%;
+  top: -13%;
   right: 3%;
   z-index: -999;
   border-radius: 9px;
@@ -194,7 +194,7 @@
   background: var(--base-color-alt);
   height: 70%;
   width: 50%;
-  bottom: -10%;
+  bottom: -13%;
   left: 3%;
   z-index: -999;
   border-radius: 9px;
