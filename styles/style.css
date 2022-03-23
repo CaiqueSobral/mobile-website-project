@@ -166,6 +166,48 @@
 /*=== HERO SECTION ============================ */
 /*============================================= */
 
+.section-hero {
+  padding-bottom: 2.4rem;
+}
+
+.image-box-hero {
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+  position: relative;
+  z-index: -999;
+}
+
+.image-box-hero::before {
+  content: "";
+  background: var(--base-color);
+  height: 70%;
+  width: 50%;
+  top: -10%;
+  right: 3%;
+  z-index: -999;
+  border-radius: 9px;
+  position: absolute;
+}
+
+.image-box-hero::after {
+  content: "";
+  background: var(--base-color-alt);
+  height: 70%;
+  width: 50%;
+  bottom: -10%;
+  left: 3%;
+  z-index: -999;
+  border-radius: 9px;
+  position: absolute;
+}
+
+.hero-img {
+  border-radius: 9px;
+  width: 80%;
+  height: auto;
+  align-self: start;
+}
+
 .hero-divider {
   height: 1px;
   background: linear-gradient(

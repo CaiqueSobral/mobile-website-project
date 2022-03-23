@@ -49,3 +49,22 @@ img {
   width: 100%;
   height: auto;
 }
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  row-gap: 3.8rem;
+  column-gap: 3.2rem;
+}
+
+.container {
+  max-width: 54.4rem;
+
+  padding: 0.32rem;
+  margin: 0 auto;
+}
