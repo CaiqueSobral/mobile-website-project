@@ -106,7 +106,7 @@ img {
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -136,6 +136,15 @@ img {
   display: grid;
   row-gap: 3.8rem;
   column-gap: 3.2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
 }
 
 .grid--2-cols {
