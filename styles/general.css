@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -50,6 +50,82 @@ img {
   height: auto;
 }
 
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: var(--base-color);
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: var(--base-color-alt);
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: var(--base-color);
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  box-shadow: inset 0 0 0 2px var(--base-color);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--base-color);
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin-bottom: 1rem;
+}
+
+.regular-text {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
 .center-flex {
   display: flex;
   align-items: center;
@@ -62,9 +138,38 @@ img {
   column-gap: 3.2rem;
 }
 
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.section {
+  padding-top: 2.4rem;
+
+  padding-bottom: 2.4rem;
+}
+
 .container {
   max-width: 54.4rem;
-
-  padding: 0.32rem;
+  padding: 2.4rem;
   margin: 0 auto;
 }
