@@ -7,7 +7,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 /* quando clicar em um item do menu, esconder o menu */
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("nav ul il a");
 
 for (const link of links) {
   link.addEventListener("click", function () {
@@ -29,7 +29,7 @@ const observer = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-80px",
+    rootMargin: "-100px",
   }
 );
 observer.observe(sectionHeroEl);
