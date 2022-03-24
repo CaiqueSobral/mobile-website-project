@@ -7,7 +7,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 /* quando clicar em um item do menu, esconder o menu */
-const links = document.querySelectorAll("nav ul il a");
+const links = document.querySelectorAll("header nav a");
 
 for (const link of links) {
   link.addEventListener("click", function () {
