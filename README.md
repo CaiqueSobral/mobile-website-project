@@ -1,3 +1,3 @@
-# mobile-project
+# mobile-website-project
 
-A mobile project to practice front-end
+This project is first made for practicing and play aroud with HTML, CSS and Javascript 
