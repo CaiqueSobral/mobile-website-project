@@ -6,14 +6,32 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("open");
 });
 
-/* quando clicar em um item do menu, esconder o menu */
-const links = document.querySelectorAll("header nav a");
+// smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
 
-for (const link of links) {
-  link.addEventListener("click", function () {
-    headerEl.classList.toggle("open");
+    // scroll back to the top
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    // scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // close the mobile navigation
+    if (link.classList.contains("nav-link")) {
+      headerEl.classList.toggle("open");
+    }
   });
-}
+});
 
 // Fixed navigation
 const sectionHeroEl = document.querySelector(".section-hero");
