@@ -309,4 +309,33 @@
 
 /*============================================= */
 /*============================================= */
-/*============================================= */ ;
+/*============================================= */
+
+/*============================================= */
+/*=== TESTIMONIALS SECTION ==================== */
+/*============================================= */
+
+.testimonial {
+  padding: 2.4rem;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.09);
+}
+
+.testimonial-img {
+  width: 5.2rem;
+  height: auto;
+  border-radius: 50%;
+
+  margin-bottom: 2rem;
+}
+
+.testimonial blockquote p {
+  margin-bottom: 1.2rem;
+}
+
+.testimonial blockquote p span {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: serif;
+  color: var(--base-color);
+}
