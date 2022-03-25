@@ -4,6 +4,7 @@ const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("open");
+  document.body.classList.add("sticky");
 });
 
 // smooth scrolling animation
@@ -29,6 +30,7 @@ allLinks.forEach(function (link) {
     // close the mobile navigation
     if (link.classList.contains("nav-link")) {
       headerEl.classList.toggle("open");
+      document.body.classList.remove("sticky");
     }
   });
 });
@@ -64,7 +66,7 @@ const swiper = new Swiper(".swiper-container", {
 const scrollReveal = ScrollReveal({
   origin: "top",
   distance: "15px",
-  duration: 700,
+  duration: 300,
   reset: true,
 });
 
@@ -77,7 +79,8 @@ scrollReveal.reveal(
   #services .services-title,
   #services .services-title .subheading,
   #services .services-title .heading-secondary,
-  .services-card, .heading-tertiary, .card-text, .icon-services
+  .services-card, .heading-tertiary, .card-text, .icon-services, .subheading, .heading-secondary, .btn,
+  .testimonial, .regular-text, .testimonial-img, cite
   `,
-  { interval: 50 }
+  { interval: 4 }
 );
