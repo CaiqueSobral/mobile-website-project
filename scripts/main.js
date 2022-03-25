@@ -30,7 +30,6 @@ allLinks.forEach(function (link) {
     // close the mobile navigation
     if (link.classList.contains("nav-link")) {
       headerEl.classList.toggle("open");
-      document.body.classList.remove("sticky");
     }
   });
 });
@@ -54,33 +53,16 @@ const observer = new IntersectionObserver(
 );
 observer.observe(sectionHeroEl);
 
-const swiper = new Swiper(".swiper-container", {
-  slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+/* mudar o header da página quando der scroll */
+const header = document.querySelector("#header");
+const navHeight = header.offsetHeight;
 
-const scrollReveal = ScrollReveal({
-  origin: "top",
-  distance: "15px",
-  duration: 300,
-  reset: true,
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add("scroll");
+  } else {
+    // menor que a altura do header
+    header.classList.remove("scroll");
+  }
 });
-
-scrollReveal.reveal(
-  `#hero .hero-img, #hero .hero-text,#hero .hero-text .heading-primary,  #hero .hero-text .hero-description
-  #about .about-title,
-  #about .about-title .subheading,
-  #about .about-title heading-secondary,
-  #about .img, #about grid-about, #about .regular-text
-  #services .services-title,
-  #services .services-title .subheading,
-  #services .services-title .heading-secondary,
-  .services-card, .heading-tertiary, .card-text, .icon-services, .subheading, .heading-secondary, .btn,
-  .testimonial, .regular-text, .testimonial-img, cite
-  `,
-  { interval: 4 }
-);

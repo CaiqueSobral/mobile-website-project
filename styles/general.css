@@ -54,11 +54,11 @@ img {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
-  padding: 1.2rem 2.4rem;
+  padding: 1rem 2rem;
   border-radius: 9px;
 
   transition: all 0.3s;
@@ -95,18 +95,18 @@ img {
 }
 
 .heading-primary {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.2;
 }
 
 .heading-tertiary {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
