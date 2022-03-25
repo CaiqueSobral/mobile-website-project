@@ -7,7 +7,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 // smooth scrolling animation
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("nav a:link");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -47,7 +47,7 @@ const observer = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: "-100px",
+    rootMargin: "-80px",
   }
 );
 observer.observe(sectionHeroEl);
