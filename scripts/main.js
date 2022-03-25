@@ -51,3 +51,33 @@ const observer = new IntersectionObserver(
   }
 );
 observer.observe(sectionHeroEl);
+
+const swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+});
+
+const scrollReveal = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 700,
+  reset: true,
+});
+
+scrollReveal.reveal(
+  `#hero .hero-img, #hero .hero-text,#hero .hero-text .heading-primary,  #hero .hero-text .hero-description
+  #about .about-title,
+  #about .about-title .subheading,
+  #about .about-title heading-secondary,
+  #about .img, #about grid-about, #about .regular-text
+  #services .services-title,
+  #services .services-title .subheading,
+  #services .services-title .heading-secondary,
+  .services-card, .heading-tertiary, .card-text, .icon-services
+  `,
+  { interval: 50 }
+);
